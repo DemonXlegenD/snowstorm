@@ -1,0 +1,143 @@
+@import url(afx-icon.css);
+.snowstorm,
+.snowstorm * {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none !important;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.snowstorm {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-family: Open Sans, Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.snowstorm .snowstorm-item {
+  position: relative;
+  font-size: inherit;
+  max-width: 100%;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  text-align: center !important;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.snowstorm .snowstorm-item:focus,
+.snowstorm .snowstorm-item:hover {
+  box-shadow: 0 5px 15px rgba(100, 100, 100, 0.3);
+}
+
+/* -------------------------------------------------- */
+.snowstorm .snowstorm-header {
+  display: block;
+  width: 100%;
+  padding: 5px 25px;
+}
+
+/* -------------------------------------------------- */
+.snowstorm .snowstorm-image {
+  display: block;
+  width: 100%;
+  padding-top: min(300px, 75%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 150px;
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+.snowstorm .snowstorm-negative *,
+.snowstorm .snowstorm-description,
+.snowstorm .snowstorm-description *,
+.snowstorm .snowstorm-positive * {
+  font-size: 14px;
+  line-height: 24px;
+  list-style: none;
+}
+
+/* -------------------------------------------------- */
+.snowstorm .snowstorm-negative,
+.snowstorm .snowstorm-description,
+.snowstorm .snowstorm-positive {
+  text-align: left;
+}
+
+/* -------------------------------------------------- */
+.snowstorm .snowstorm-negative ul li::before,
+.snowstorm .snowstorm-positive ul li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#fff, #fff), #e05c5c;
+  background-position: center;
+  background-size: 50% 2px, 2px 50%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin: 3px 5px 4px 0;
+  border-radius: 100%;
+  position: static;
+}
+
+.snowstorm .snowstorm-positive ul li::before {
+  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), #6eb340;
+  background-position: center;
+  background-size: 50% 2px, 2px 50%;
+  background-repeat: no-repeat;
+}
+
+.snowstorm-grid .snowstorm-list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  flex-flow: row wrap;
+  margin: 0.5em -0.5em;
+  align-items: flex-start;
+}
+
+.snowstorm-grid .snowstorm-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex: 1 0 calc(33% - 1em);
+  min-width: 180px;
+  margin: 0.5em;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.excerpt-wrap li,
+.nv-content-wrap li {
+  margin-top: 10px;
+}
+
+.excerpt-wrap ol,
+.excerpt-wrap ul,
+.nv-content-wrap ol,
+.nv-content-wrap ul {
+  margin: 30px 0;
+}

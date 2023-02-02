@@ -1,0 +1,163 @@
+body{
+    background-image: url();
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+
+article{
+    background-color: #5684c1;
+}
+
+section > article > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+form > div{
+    margin: 10px;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px; 
+	padding:10px; 
+}
+
+input#submit{
+    border: none;
+    background-color: #094FAC;
+    margin: 20px;
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+}
+
+form > div > h3{
+    color:#F5EDED;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    text-shadow: -2px 0 black, 0 1px black,
+    1px 0 black, 0 -2px black;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+div.information {
+    height: max-content;
+    width: max-content;
+    padding:20px;
+    padding-right: 40px;
+    background-color:#5684c1;
+    transition: all 1s ease;
+
+}
+
+div.information:hover {
+    background-color:  #094FAC;
+    
+    animation: focus 1s 1;
+    transition: all 1s ease;
+    border: solid 1px #000000;
+    border-radius: 20px;
+}
+
+@keyframes focus {
+    0%{
+        border: 0px;
+        border-radius: 0px;
+    }
+    100%{
+        border: solid 1px #000000;
+        border-radius: 20px;
+    }
+}
+
+
+
+aside{
+    width: 100px;
+    padding: 20px;
+    height: auto;
+    font-size: 20px;
+    background-color: #808080;
+    transition: all 1s ease;
+    
+}
+
+aside > div{
+    visibility: hidden;
+}
+
+aside > div > div > h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+aside > p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+aside:hover{
+    animation: animationCroit 1s 1;
+    transition: all 1s ease;
+    width: 400px;
+    font-size: 28px;
+    height: auto;
+    background-color: #393939;
+    
+    color:#5684c1;
+}
+aside:hover > div{
+    visibility: visible;
+}
+
+aside > p {
+    text-align: justify;
+}
+
+@keyframes animationCroit {
+    0% {
+
+        font-size: 20px;
+        width: 100px;
+        height:auto;
+        background-color: #808080;
+      }
+    100% {
+        font-size: 28px;
+        width: 400px;
+        height: auto;
+        background-color: #393939;
+        color:#5684c1;
+      }
+}
+
+#selector {
+    color: #F5EDED;
+    margin-bottom: 20px;
+	background:#5684c1;
+	border-color: #094FAC;
+	cursor:pointer;
+}
+
+h3 > span:hover, p > span:hover{
+    color: #abcfff;
+}
+
+p > a{
+    text-decoration: none;
+    color: #F5EDED;
+}
